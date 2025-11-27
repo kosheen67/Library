@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://kosheen67-library.netlify.app/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./Library_files/css2" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./Library_files/css2(1)" rel="stylesheet">
+  <title>Library</title>
+  <link rel="stylesheet" href="./Library_files/style.css">
+  <link rel="icon" href="https://kosheen67-library.netlify.app/images/favicon.png">
+
+</head>
+
+<body>
+  <div class="main-block">
+    <header>
+      <h1>Brooklyn Public Library</h1>
+      <nav>
+        <ul class="nav-list">
+          <li class="list-item"><a class="list-item-link" href="https://kosheen67-library.netlify.app/#about">About</a></li>
+          <li class="list-item"><a class="list-item-link" href="https://kosheen67-library.netlify.app/#favorites">Favorites</a></li>
+          <li class="list-item"><a class="list-item-link" href="https://kosheen67-library.netlify.app/#coffeeShop">Coffee Shop</a></li>
+          <li class="list-item"><a class="list-item-link" href="https://kosheen67-library.netlify.app/#contacts">Contacts</a></li>
+          <li class="list-item"><a class="list-item-link" href="https://kosheen67-library.netlify.app/#libraryCard">Library Card</a></li>
+        </ul>
+      </nav>
+
+
+      <nav id="menu" style="display:none;">
+        <ul class="nav-list">
+          <li class="list-item"><a class="list-item-link" href="https://kosheen67-library.netlify.app/#about">About</a></li>
+          <li class="list-item"><a class="list-item-link" href="https://kosheen67-library.netlify.app/#favorites">Favorites</a></li>
+          <li class="list-item"><a class="list-item-link" href="https://kosheen67-library.netlify.app/#coffeeShop">Coffee Shop</a></li>
+          <li class="list-item"><a class="list-item-link" href="https://kosheen67-library.netlify.app/#contacts">Contacts</a></li>
+          <li class="list-item"><a class="list-item-link" href="https://kosheen67-library.netlify.app/#libraryCard">Library Card</a></li>
+        </ul>
+      </nav>
+
+      <img src="./Library_files/icon_profile.svg" alt="icon for log-in">
+
+      <div class="burger-menu" id="burger-menu" onclick="toggle(menu)">
+        <span></span>
+      </div>
+
+
+    </header>
+    <main>
+      <section class="welcome">
+        <h3 class="text-welcome">
+          welcome <br>to the brooklyn <br>library
+        </h3>
+      </section>
+
+      <section class="about" id="about">
+        <h2 class="sections-header">About</h2>
+        <div class="line"></div>
+        <p class="about-text">
+          The Brooklyn Library is a free workspace, a large number of books
+          and a cozy coffee shop inside
+        </p>
+        <div class="left-arrow"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+            <path d="M15 7.5L9 12.5L15 17.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg></div>
+        <div class="about-images">
+          <img class="girl" src="./Library_files/image1.png" alt="girl in the library">
+          <img class="monuments" src="./Library_files/image2.png" alt="monuments in the library">
+          <img class="shelves" src="./Library_files/image3.png" alt="a lot of books on the shelves">
+        </div>
+        <div class="right-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+            <path d="M9 17.5L15 12.5L9 7.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+
+        <div class="main-wrapper">
+          <a href="https://kosheen67-library.netlify.app/#">
+            <div class="wrapper">
+              <div class="brown-circle"></div>
+            </div>
+          </a>
+
+          <a href="https://kosheen67-library.netlify.app/#">
+            <div class="wrapper">
+              <div class="black-circle"></div>
+            </div>
+          </a>
+          <a href="https://kosheen67-library.netlify.app/#">
+            <div class="wrapper">
+              <div class="black-circle"></div>
+            </div>
+          </a>
+
+          <a href="https://kosheen67-library.netlify.app/#">
+            <div class="wrapper">
+              <div class="black-invisible-circle"></div>
+            </div>
+          </a>
+
+          <a href="https://kosheen67-library.netlify.app/#">
+            <div class="wrapper">
+              <div class="black-invisible-circle"></div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="favorites" id="favorites">
+        <h2 class="sections-header">Favorites</h2>
+        <div class="line"></div>
+        <p class="fav-paragraph">Pick favorites of season</p>
+
+        <div class="seasons">
+          <div class="input-wrapper">
+            <input class="seasons-input" type="radio" id="choice1" name="winter" checked="">
+          </div>
+          <b>Winter</b>
+
+          <div class="input-wrapper"><input class="seasons-input-spring" type="radio" id="choice2" name="winter"></div>
+          Spring
+
+          <div class="input-wrapper"><input class="seasons-input-summer" type="radio" id="choice3" name="winter"></div>
+          Summer
+
+          <div class="input-wrapper"><input class="seasons-input-autumn" type="radio" id="choice4" name="winter"></div>
+          Autumn
+        </div>
+
+
+        <div class="main-winter-books">
+          <div class="winter-books">
+
+            <p class="staff-picks">Staff Picks</p>
+            <div class="winter-books-line"></div>
+            <h3>The Book Eaters</h3>
+            <h4>By Sunyi Dean</h4>
+            <p class="text-in-books-blocks">An unusual sci-fi story about a book eater woman who tries desperately to
+              save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family
+              values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.</p>
+            <img class="book-cover" src="./Library_files/book-eaters.png" alt="cover of the book">
+            <button type="button">Buy</button>
+
+          </div>
+
+
+          <div class="winter-books2">
+            <p class="staff-picks">Staff Picks</p>
+            <div class="winter-books-line"></div>
+            <h3>Cackle</h3>
+            <h4>By Rachel Harrison</h4>
+            <p class="text-in-books-blocks">Are your Halloween movies of choice The Witches of Eastwick and Practical
+              Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in
+              upstate New York and befriends a beautiful witch.</p>
+            <img class="book-cover" src="./Library_files/cackle.png" alt="cover of the book">
+            <br><br><button type="button">Buy</button>
+          </div>
+
+          <div class="winter-books">
+            <p class="staff-picks">Staff Picks</p>
+            <div class="winter-books-line"></div>
+            <h3>Dante: Poet of the Secular World</h3>
+            <h4>By Erich Auerbach</h4>
+            <p class="text-in-books-blocks">Auerbach's engaging book places the 'Comedy' within the tradition of epic,
+              tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and
+              his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.
+            </p>
+            <img class="book-cover" src="./Library_files/poet.png" alt="cover of the book">
+            <button type="button">Buy</button>
+          </div>
+
+
+          <div class="winter-books2">
+            <p class="staff-picks">Staff Picks</p>
+            <div class="winter-books-line"></div>
+            <h3>The Last Queen</h3>
+            <h4>By Clive Irving</h4>
+            <p class="text-in-books-blocks">A timely and revelatory new biography of Queen Elizabeth (and her family)
+              exploring how the Windsors have evolved and thrived as the modern world has changed around them.</p>
+            <img class="book-cover" src="./Library_files/lastqueen.png" alt="cover of the book">
+            <br><br><br><br><button class="own-button" type="button" disabled="">Own</button>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="coffeeShop" id="coffeeShop">
+        <h2 class="sections-header">Coffee Shop</h2>
+        <div class="line"></div>
+        <p class="coffeeShop-text">
+          In our library, we have of cozy coffee shop, welcoming in customers with frothy cappuccinos and friendly
+          conversation. You can get a favorite book and read in coffee shop. Our barista to cook you best coffee, and
+          also you can try desserts from bakery.
+        </p>
+        <div class="menu">
+          <div class="drinks">
+            <div class="header-drinks">
+              <h3 class="header-drinks">Coffee &amp; Tea</h3>
+            </div>
+            <div class="drinks-1">
+              <p class="p-drinks">Cold Brew Coffee</p>
+              <div class="line-in-menu"></div>
+              <p class="price-drinks">$3</p>
+            </div>
+            <div class="drinks-2">
+              <p class="p-drinks">French Press Pot</p>
+              <div class="line-in-menu"></div>
+              <p class="price-drinks">$5</p>
+            </div>
+            <div class="drinks-3">
+              <p class="p-drinks">Espresso</p>
+              <div class="line-in-menu"></div>
+              <p class="price-drinks">$2</p>
+            </div>
+            <div class="drinks-4">
+              <p class="p-drinks">Cappuccino</p>
+              <div class="line-in-menu"></div>
+              <p class="price-drinks">$4</p>
+            </div>
+            <div class="drinks-5">
+              <p class="p-drinks">Hot Tea</p>
+              <div class="line-in-menu"></div>
+              <p class="price-drinks">$2</p>
+            </div>
+            <div class="drinks-6">
+              <p class="p-drinks">Cold Tea</p>
+              <div class="line-in-menu"></div>
+              <p class="price-drinks">$2</p>
+            </div>
+          </div>
+
+          <div class="empty-block"></div>
+
+          <div class="desserts">
+            <div class="header-desserts">
+              <h3 class="header-desserts">Desserts &amp; Cakes</h3>
+            </div>
+
+            <div class="desserts-1">
+              <p class="p-desserts">Forest Gateau</p>
+              <div class="line-in-menu-desserts"></div>
+              <p class="price-desserts">$16</p>
+            </div>
+
+
+            <div class="desserts-2">
+              <p class="p-desserts">Blue Moon</p>
+              <div class="line-in-menu-desserts"></div>
+              <p class="price-desserts">$16</p>
+            </div>
+            <div class="desserts-3">
+              <p class="p-desserts">Truffle Cake</p>
+              <div class="line-in-menu-desserts"></div>
+              <p class="price-desserts">$15</p>
+            </div>
+
+            <div class="desserts-4">
+              <p class="p-desserts">Chocolate Cake</p>
+              <div class="line-in-menu-desserts"></div>
+              <p class="price-desserts">$18</p>
+            </div>
+
+            <div class="desserts-5">
+              <p class="p-desserts">Poet’s Dream Cake</p>
+              <div class="line-in-menu-desserts"></div>
+              <p class="price-desserts">$16</p>
+            </div>
+
+            <div class="desserts-6">
+              <p class="p-desserts">Pineapple Cake</p>
+              <div class="line-in-menu-desserts"></div>
+              <p class="price-desserts">$14</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="contacts" id="contacts">
+        <h2 class="sections-header">Our Contacts</h2>
+        <div class="line"></div>
+        <div class="text-and-map">
+          <div class="contacts-text">
+            <p class="contacts-text-par"><b>For all Library inquiries:</b></p>
+            <p class="contacts-text-par1">Please call <a class="tel-link" href="tel:6177302370">(617) 730-2370</a><br>
+            </p>
+            <p class="contacts-text-par2">For TTY service, please call <a class="tel-link" href="tel:6177302370">(617)
+                730-2370</a><br></p>
+            <p class="contacts-text-par3">Putterham Library: <a class="tel-link" href="tel:6177302385">(617)
+                730-2385</a><br></p>
+            <p class="contacts-text-par4"><b>Senior Staff</b><br></p>
+            Library Director: <a class="mail-link" href="mailto:AmandaHirst@gmail.com"><b>Amanda Hirst</b></a><br>
+
+          </div>
+          <div class="image-of-map">
+            <img src="./Library_files/map.png" alt="map">
+          </div>
+        </div>
+
+      </section>
+
+
+      <section class="libraryCard" id="libraryCard">
+        <h2 class="sections-header">Digital Library Cards</h2>
+        <div class="line"></div>
+
+        <div class="libraryCard-content">
+          <div>
+            <p class="library-card-header">
+              Find your Library card
+            </p>
+            <div class="card-form">
+              <form action="https://kosheen67-library.netlify.app/#">
+                <div class="inside-form">
+                  <p class="form-header">Brooklyn Public Library</p>
+                  <label for="readers-name">
+                    <input class="readers-name" type="text" id="readers-name" placeholder="Reader&#39;s name">
+                  </label>
+                  <label for="card-number">
+                    <input class="card-number" type="text" id="card-number" placeholder="Card number">
+                  </label>
+                  <button class="check-card">Check the card</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="get-a-card">
+            <p class="get-a-card-header">Get a reader card</p>
+            <p class="get-a-card-text">You will be able to see a reader card after logging into account or you can
+              register a new account</p>
+            <button class="get-a-card-sign-up">Sign up</button>
+            <button class="get-a-card-log-in">Log in</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+
+      <div class="top-part-footer">
+        <a class="library-address" href="https://yandex.ru/maps/202/new-york/?ll=-73.992255%2C40.696827&amp;mode=search&amp;ol=geo&amp;ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTQ4Nzc0OTg0EjVVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EsIE5ldyBZb3JrLCBDYWRtYW4gUGxhemEgUGFyayIKDSz7k8IVHssiQg%2C%2C&amp;z=16.01">
+          <p class="left-text">286 Cadman Plaza, New York, NY 11238, United States</p>
+        </a>
+        <p class="right-text">Mon - Fri<br>
+          08:00 am - 07:00 pm</p>
+      </div>
+      <div class="middle-part-footer">
+        <div class="footer-icons">
+          <ul class="footer-icons">
+            <li class="footer-icon"><a href="https://twitter.com/"><img src="./Library_files/twit.svg" alt="icon of twitter"></a></li>
+            <li class="footer-icon"><a href="http://www.instagram.com/"><img src="./Library_files/inst.svg" alt="icon of instagram"></a></li>
+            <li class="footer-icon"><a href="https://ru-ru.facebook.com/"><img src="./Library_files/fb.svg" alt="icon of facebook"></a></li>
+
+          </ul>
+        </div>
+
+        <div class="right-text2">Sat - Sun<br>
+          10:00 am - 06:00 pm
+        </div>
+      </div>
+      <hr>
+
+
+      <div class="bootom-part-footer">
+        <div class="year">2023</div>
+        <div class="rs"><a class="school-link" href="https://rs.school/js-stage0/">The Rolling Scopes School</a></div>
+        <div class="my-username"><a class="my-username-link" href="https://github.com/kosheen67">j_vostrik</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./Library_files/index.js.Без названия"></script>
+  <script src="./Library_files/jquery-3.5.1.slim.min.js.Без названия"></script>
+  <script src="./Library_files/menu.js.Без названия"></script>
+
+
+
+
+<deepl-input-controller translate="no"><template shadowrootmode="open"><link rel="stylesheet" href="chrome-extension://cofdbpoegempjloogbagkncekinflcnj/build/content.css"><div dir="ltr" style="visibility: initial !important;"><div class="dl-input-translation-container svelte-95aucy"><div></div></div></div></template></deepl-input-controller></body></html>
