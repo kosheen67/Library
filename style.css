@@ -24,26 +24,24 @@ header {
 h1 {
     margin-left: 20px;
     color: #FFF;
-    font-family: Forum;
+    font-family: Forum, serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 50px;
     letter-spacing: 0.6px;
+    margin-right: 454px;
 }
 
 nav {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 30px;
-    margin-left: 414px;
     margin-top: 3px;
 }
 
 .nav-list {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 33px;
 }
 
 .list-item {
@@ -53,7 +51,7 @@ nav {
 .list-item-link {
     color: white;
     text-decoration: none;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -79,7 +77,7 @@ main {
 .welcome {
     width: 1440px;
     height: 600px;
-    background-image: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.00) 50%), url(background-pic.jpg);
+    background-image: linear-gradient(to bottom, #0c0c0e 0%, rgba(18, 18, 21, 0.00) 50%), url(./images/background-pic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -94,7 +92,7 @@ main {
     background-color: black;
     text-align: center;
     padding: 35px 40px 0px;
-    font-family: Forum;
+    font-family: Forum, serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -105,23 +103,22 @@ main {
 }
 
 .about {
-    width: 1440px;
     height: 837px;
     background-color: #FFF;
+    padding: 0 20px;
 }
 
 .sections-header {
     text-align: center;
     color: #0C0C0E;
-    font-family: Forum;
+    font-family: Forum, serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
-    /* 100% */
     letter-spacing: 2px;
     text-transform: capitalize;
-    margin-top: 20px;
+    margin-top: 17px;
 }
 
 .line {
@@ -130,24 +127,23 @@ main {
     background: #0C0C0E;
     margin-left: 695px;
     margin-top: -10px;
+    margin-bottom: 40px;
 }
 
 .about-text {
     color: #000;
     text-align: center;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
-    /* 200% */
-    margin-top: 40px;
 }
 
 .about-images {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 23px;
     justify-content: center;
 }
 
@@ -170,7 +166,7 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 .brown-circle {
@@ -203,7 +199,7 @@ main {
 
 .fav-paragraph {
     color: black;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -214,7 +210,7 @@ main {
 
 .seasons {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -287,7 +283,7 @@ main {
 
 .staff-picks {
     color: #000;
-    font-family: Forum;
+    font-family: Forum, serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -309,7 +305,7 @@ main {
 
 h3 {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
@@ -323,7 +319,7 @@ h3 {
 
 h4 {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
@@ -336,7 +332,7 @@ h4 {
 
 .text-in-books-blocks {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -367,7 +363,7 @@ button {
     border: 1px solid #0C0C0E;
     color: #0C0C0E;
     text-align: center;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 10px;
     font-style: normal;
     font-weight: 700;
@@ -407,7 +403,7 @@ button:hover {
 .coffeeShop-text {
     color: #000;
     text-align: center;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -434,7 +430,7 @@ button:hover {
 
 .header-drinks {
     color: #BB945F;
-    font-family: Forum;
+    font-family: Forum, serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -447,7 +443,7 @@ button:hover {
 
 .drinks-1 {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -462,7 +458,7 @@ button:hover {
 
 .drinks-2 {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -477,7 +473,7 @@ button:hover {
 
 .drinks-3 {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -492,7 +488,7 @@ button:hover {
 
 .drinks-4 {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -507,7 +503,7 @@ button:hover {
 
 .drinks-5 {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -522,7 +518,7 @@ button:hover {
 
 .drinks-6 {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -556,7 +552,7 @@ button:hover {
     margin-top: 0px;
     margin-left: 0;
     color: #000;
-    font-family: Forum;
+    font-family: Forum, serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -584,7 +580,7 @@ button:hover {
 
 .header-desserts {
     color: #BB945F;
-    font-family: Forum;
+    font-family: Forum, serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -597,7 +593,7 @@ button:hover {
 
 .desserts-1 {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -613,7 +609,7 @@ button:hover {
 
 .desserts-2 {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -629,7 +625,7 @@ button:hover {
 
 .desserts-3 {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -645,7 +641,7 @@ button:hover {
 
 .desserts-4 {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -661,7 +657,7 @@ button:hover {
 
 .desserts-5 {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -677,7 +673,7 @@ button:hover {
 
 .desserts-6 {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -693,7 +689,7 @@ button:hover {
 
 .price-desserts {
     color: #000;
-    font-family: Forum;
+    font-family: Forum, serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -733,7 +729,7 @@ button:hover {
 
 .contacts-text {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -785,7 +781,7 @@ button:hover {
 
 .library-card-header {
     color: #000;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -817,7 +813,7 @@ form {
 
 .form-header {
     color: #000;
-    font-family: Forum;
+    font-family: Forum, serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -841,7 +837,7 @@ form {
 
 ::placeholder {
     color: #8E8E8E;
-    font-family: Forum;
+    font-family: Forum, serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -862,7 +858,7 @@ form {
     border: 1px solid #0C0C0E;
     color: #0C0C0E;
     text-align: center;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -890,7 +886,7 @@ form {
 
 .get-a-card-header {
     color: #000;
-    font-family: Forum;
+    font-family: Forum, serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -903,7 +899,7 @@ form {
 .get-a-card-text {
     color: #000;
     text-align: right;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -938,7 +934,7 @@ footer {
 .left-text {
     width: 229px;
     color: #FFF;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -956,7 +952,7 @@ footer {
     width: 149px;
     color: #FFF;
     text-align: right;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -976,7 +972,7 @@ footer {
     width: 149px;
     color: #FFF;
     text-align: right;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -1016,7 +1012,7 @@ hr {
 .year {
     color: #FFF;
     text-align: center;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -1030,7 +1026,7 @@ hr {
 .rs {
     color: #FFF;
     text-align: center;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -1042,7 +1038,7 @@ hr {
 .my-username {
     color: #FFF;
     text-align: center;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -1140,7 +1136,7 @@ hr {
         width: 350px;
         height: 50px;
         color: #FFF;
-        font-family: Forum;
+        font-family: Forum, serif;
         font-size: 30px;
         font-style: normal;
         font-weight: 400;
