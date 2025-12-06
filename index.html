@@ -7,8 +7,9 @@
 	<title>Library</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./style.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet">
 	<link rel="icon" href="https://kosheen67-library.netlify.app/images/favicon.png">
 	<link rel="stylesheet" href="./style.css">
 </head>
@@ -18,15 +19,18 @@
 		<header class="header">
 			<h1 class="header-title">Brooklyn Public Library</h1>
 			<span class="visually-hidden"></span>
-			<svg class='icon-profile' width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<path fill-rule="evenodd" clip-rule="evenodd" d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14ZM18.6667 7.77778C18.6667 10.3551 16.5774 12.4444 14.0001 12.4444C11.4227 12.4444 9.33339 10.3551 9.33339 7.77778C9.33339 5.20045 11.4227 3.11111 14.0001 3.11111C16.5774 3.11111 18.6667 5.20045 18.6667 7.77778ZM19.4998 16.2781C20.9584 17.7367 21.7778 19.715 21.7778 21.7778H14L6.22225 21.7778C6.22225 19.715 7.0417 17.7367 8.50031 16.2781C9.95893 14.8194 11.9372 14 14 14C16.0628 14 18.0411 14.8194 19.4998 16.2781Z" fill="white" />
+			<svg class='icon-profile' width="28" height="28" viewBox="0 0 28 28" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd"
+					d="M28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14ZM18.6667 7.77778C18.6667 10.3551 16.5774 12.4444 14.0001 12.4444C11.4227 12.4444 9.33339 10.3551 9.33339 7.77778C9.33339 5.20045 11.4227 3.11111 14.0001 3.11111C16.5774 3.11111 18.6667 5.20045 18.6667 7.77778ZM19.4998 16.2781C20.9584 17.7367 21.7778 19.715 21.7778 21.7778H14L6.22225 21.7778C6.22225 19.715 7.0417 17.7367 8.50031 16.2781C9.95893 14.8194 11.9372 14 14 14C16.0628 14 18.0411 14.8194 19.4998 16.2781Z"
+					fill="white" />
 			</svg>
-			<button class="menu-toggle" aria-label="Открыть меню">
+			<button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
 				<span class="menu-toggle__line"></span>
 				<span class="menu-toggle__line"></span>
 				<span class="menu-toggle__line"></span>
 			</button>
-			<nav class="navigation">
+			<nav class="navigation" id="mainNav">
 				<ul class="nav-list">
 					<li class="list-item">
 						<a class="list-item-link" href="#">About</a>
@@ -45,16 +49,85 @@
 			</nav>
 		</header>
 		<main class="main-page">
+			<!-- Секция Welcome -->
 			<section class="welcome">
 				<h2 class="text-welcome">
 					welcome <br>to the brooklyn <br>library
 				</h2>
 			</section>
+
+			<!-- Cекция About -->
+			<section class="about">
+				<h2 class="about-header">About</h2>
+				<p class="about-text">
+					The Brooklyn Library is a free workspace, a large number of books
+					and a cozy coffee shop inside
+				</p>
+				<div class="about-gallery">
+					<button class="left-arrow slider-arrow" type="button" aria-label="Предыдущее изображение"
+						id="prevSlide">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+							<path d="M15 7.5L9 12.5L15 17.5" stroke="black" stroke-linecap="round"
+								stroke-linejoin="round">
+							</path>
+						</svg>
+					</button>
+
+					<!-- Контейнер для изображений -->
+					<div class="about-images">
+						<img class="slide active" data-index="0" src="./images/image1.png" alt="girl in the library">
+						<img class="slide visually-hidden" data-index="1" src="./images/image2.png"
+							alt="monuments in the library">
+						<img class="slide visually-hidden" data-index="2" src="./images/image3.png"
+							alt="a lot of books on the shelves">
+						<img class="slide visually-hidden" data-index="3" src="./images/image4.jpg"
+							alt="books with a ladder">
+						<img class="slide visually-hidden" data-index="4" src="./images/image5.jpg"
+							alt="library building">
+					</div>
+
+					<button class="right-arrow slider-arrow" type="button" aria-label="Следующее изображение"
+						id="nextSlide">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+							<path d="M9 17.5L15 12.5L9 7.5" stroke="black" stroke-linecap="round"
+								stroke-linejoin="round"></path>
+						</svg>
+					</button>
+				</div>
+
+				<div class="pagination-wrapper" aria-label="Навигация по изображениям">
+					<div class="button-wrapper">
+						<button class="pagination-button current" type="button" data-index="0"
+							aria-label="Перейти к изображению 1" aria-selected="true">
+						</button>
+					</div>
+					<div class="button-wrapper">
+						<button class="pagination-button" type="button" data-index="1"
+							aria-label="Перейти к изображению 2" aria-selected="false">
+						</button>
+					</div>
+					<div class="button-wrapper">
+						<button class="pagination-button" type="button" data-index="2"
+							aria-label="Перейти к изображению 3" aria-selected="false">
+						</button>
+					</div>
+					<div class="button-wrapper">
+						<button class="pagination-button" type="button" data-index="3"
+							aria-label="Перейти к изображению 4" aria-selected="false">
+						</button>
+					</div>
+					<div class="button-wrapper">
+						<button class="pagination-button" type="button" data-index="4"
+							aria-label="Перейти к изображению 5" aria-selected="false">
+						</button>
+					</div>
+				</div>
 		</main>
 		<footer class="footer">
 
 		</footer>
 	</div>
+	<script src="./script.js"></script>
 </body>
 
 </html>

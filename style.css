@@ -1,36 +1,40 @@
-*, *::before, *::after  {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-background-color: grey;
+    background-color: grey;
+    overflow-x: hidden;
 }
 
-ul, ol {
-	list-style: none;
+ul,
+ol {
+    list-style: none;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 button {
-	border: none;
-	background: none;
-	cursor: pointer;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
-	display: block;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .visually-hidden {
@@ -45,20 +49,20 @@ img {
 }
 
 .container {
-max-width: 768px;
-
-margin: 0 auto;
+    max-width: 768px;
+    margin: 0 auto;
 }
 
 header {
- display: flex;
- align-items: center;
- background: black;
- padding: 20px 20px 44px;
+    display: flex;
+    align-items: center;
+    background: black;
+    padding: 20px 20px 44px;
+    position: relative;
 }
 
 .header-title {
-color: #FFF;
+    color: #FFF;
     font-family: Forum, serif;
     font-size: 30px;
     font-style: normal;
@@ -66,63 +70,67 @@ color: #FFF;
     line-height: 50px;
     letter-spacing: 0.6px;
     margin-right: 316px;
-	min-width: 300px;
+    min-width: 300px;
 }
 
 .icon-profile {
-	margin-right: 40px;
+    margin-right: 40px;
 }
 
 .menu-toggle {
- position: relative;
-width: 45px;
-height: 20px;
-display: block;
-cursor: pointer;
+    position: relative;
+    width: 45px;
+    height: 20px;
+    display: block;
+    cursor: pointer;
 }
 
 .menu-toggle__line,
 .menu-toggle__line:nth-child(2),
-.menu-toggle__line:nth-child(3)  {
-height: 2px;
-width: 100%;
-position: absolute;
-top: 0;
-right: 0;
-background: white;
-margin: 0 auto;
+.menu-toggle__line:nth-child(3) {
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+    margin: 0 auto;
+    transition: all 0.3s ease;
 }
 
 .menu-toggle__line:nth-child(2) {
-top: 10px;
+    top: 10px;
 }
 
 .menu-toggle__line:nth-child(3) {
-	top: 20px;
+    top: 20px;
 }
 
 .navigation {
     display: block;
-	color: white;
-        position: absolute;
-        top: 100px;
-		right: 107px;
-		border: 1px solid pink;
-		background-color: black;
-		padding: 41px 107px 100px;
+    color: white;
+    position: absolute;
+    top: 100px;
+    right: -100%;
+    background-color: black;
+    padding: 41px 107px 100px;
+    transition: right 0.4s ease;
+}
 
-    }
+.navigation.active {
+    right: 0px;
+}
 
 .nav-list {
-display: flex;
-        flex-direction: column;
-        align-items: center;
-		gap: 30px;
-	}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
 
 .list-item-link {
-	font-family: Inter, sans-serif;
-	   font-size: 20px;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 50px;
@@ -134,29 +142,156 @@ main {
 }
 
 .welcome {
-	min-height: 570px;
- background-image: linear-gradient(to bottom, #0c0c0e 0%, rgba(18, 18, 21, 0.00) 50%), url(./images/welcome-bg.jpg);
+    min-height: 570px;
+    background-image: linear-gradient(to bottom, #0c0c0e 0%, rgba(18, 18, 21, 0.00) 50%), url(./images/welcome-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .text-welcome {
-color: #FFF;
-  font-family: Forum, serif;
+    color: #FFF;
+    font-family: Forum, serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: 50px;
     letter-spacing: 3px;
     text-transform: uppercase;
-	padding: 11px 40px 30px;
-background-color: black;
+    padding: 11px 40px 30px;
+    background-color: black;
     text-align: center;
-	min-width: 600px;
+    min-width: 600px;
     min-height: 200px;
- margin: 220px 168px 160px 0px;
-
+    margin: 220px 168px 160px 0px;
 }
 
+/* Секция About */
+.about {
+    min-height: 862px;
+    background-color: #FFF;
+    padding: 20px 77px 40px;
+}
 
+.about-header {
+    text-align: center;
+    color: #0C0C0E;
+    font-family: Forum, serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-top: 17px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.about-header::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 1px;
+    background: #0C0C0E;
+    margin-top: 20px;
+}
+
+.about-text {
+    margin-top: 35px;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.left-arrow {
+    display: block;
+    margin-left: 0px;
+    margin-top: 310px;
+}
+
+.slide {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.about-images {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-top: -320px;
+    justify-content: center;
+}
+
+/* Активный слайд */
+.about-images img.slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 2;
+}
+
+/* Следующий слайд (справа) */
+.about-images img.slide.next {
+    transform: translateX(100%);
+}
+
+/* Предыдущий слайд (слева) */
+.about-images img.slide.prev {
+    transform: translateX(-100%);
+}
+
+.right-arrow {
+    display: block;
+    margin-left: 590px;
+    margin-top: -270px;
+}
+
+.pagination-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 262px;
+}
+
+.button-wrapper {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide.active {
+    display: block;
+    opacity: 1;
+}
+
+.slider-arrow {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+.slider-arrow:hover svg path {
+    stroke: #BB945F;
+    /* Изменение цвета при наведении */
+}
+
+.pagination-button {
+    width: 16px;
+    height: 16px;
+    background-color: #0C0C0E;
+    border-radius: 50%;
+}
+
+.pagination-button.current {
+    background-color: #BB945F;
+}
